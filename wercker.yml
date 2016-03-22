@@ -7,3 +7,4 @@ build:
         code: |
           cd articles
           rake clean pdf
+          cp book.pdf ${WERCKER_REPORT_ARTIFACTS_DIR}/
