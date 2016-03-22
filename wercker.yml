@@ -1,0 +1,9 @@
+box: vvakame/review
+
+build:
+  steps:
+    - script:
+        name: Build PDF
+        code: |
+          cd articles
+          rake clean pdf
