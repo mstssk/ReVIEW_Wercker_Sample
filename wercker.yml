@@ -8,3 +8,4 @@ build:
           cd articles
           rake clean pdf
           cp book.pdf ${WERCKER_REPORT_ARTIFACTS_DIR}/
+          ../upload_dropbox.sh book.pdf ${DROPBOX_TOKEN}
